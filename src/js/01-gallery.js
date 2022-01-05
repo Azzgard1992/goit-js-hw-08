@@ -24,12 +24,11 @@ function createGalleryMarkup(galleryItems) {
 
 function onCardsClick(event) {
   event.preventDefault();
-
-  const lightbox = new SimpleLightbox('.gallery a', {
-    captions: true,
-    captionSelector: 'img',
-    captionType: 'attr',
-    captionsData: 'alt',
-    captionDelay: 250,
-  });
 }
+const lightbox = new SimpleLightbox('.gallery a', {
+  captions: true,
+  captionSelector: 'img',
+  captionType: 'attr',
+  captionsData: 'alt',
+  captionDelay: 250,
+});
